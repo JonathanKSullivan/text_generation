@@ -1,68 +1,57 @@
-# Recurrent Neural Networks course project: time series prediction and text generation
+# Artificial Intelligence Engineer Nanodegree: Deep Learning Applications
+## Recurrent Neural Networks
+### Time Series Prediction and Text Generation
 
-## Accelerating the Training Process 
+Used Recurrent Neural Networks (RNN) to build RNNs that can generate sequences based on input data - with a focus on two applications: With the first I used real market data in order to predict future Apple stock prices using an RNN model. The second one is trained on Sir Arthur Conan Doyle's classic novel Sherlock Holmes and will generate wacky sentences based on it that may - or may not - become the next great Sherlock Holmes novel!
 
-If your code is taking too long to run, you will need to either reduce the complexity of your chosen RNN architecture or switch to running your code on a GPU.  If you'd like to use a GPU, you have two options:
+### Code
 
-#### Build your Own Deep Learning Workstation
+* `RNN_project.ipynb` - Interactive Python Notebook.
+* `report.pdf` - Report of Python Notebook.
+* `report.html` - Report of Python Notebook.
 
-If you have access to a GPU, you should follow the Keras instructions for [running Keras on GPU](https://keras.io/getting-started/faq/#how-can-i-run-keras-on-gpu).
+## Getting Started
 
-#### Amazon Web Services
+To get this code on your machine you can fork the repo or open a terminal and run this command.
+```sh
+$ git clone https://github.com/JonathanKSullivan/text_generation.git
+$ cd text_generation
+$ jupyter notebook RNN_project.ipynb
+```
 
-Instead of a local GPU, you could use Amazon Web Services to launch an EC2 GPU instance. (This costs money.)
+### Prerequisites
 
+This project requires **Python 3**:
 
-         
-## Rubric items
+##### Notes:
 
-#### Files Submitted
+1. It is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python and load the environment included below.
+I used pygame to help me visualize mu programs so that I have beautiful visualizations of AI I can share with others in your portfolio. However, pygame is optional as it can be tricky to install.
 
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Submission Files      |  RNN_project.ipynb, my_answers.py --> both the completed notebook  RNN_project.ipynb as well as all completed python functions requested in the main notebook RNN_project.ipynb (TODO items) should be copied into this python script and submitted for grading.		|
+### Installing
+#### Mac OS X and Linux
 
-#### Documentation
+1. Run `git clone https://github.com/udacity/aind2-dl.git; cd aind2-dl`
+2. Run `conda env create -f requirements/aind-dl-mac-linux.yml`
+3. Run `source activate aind-dl`
+4. Run `KERAS_BACKEND=tensorflow python -c "from keras import backend"`
 
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Comments         		| The submission includes comments that describe the functionality of the code.  Every line of code is preceded by a meaningful comment.  1. describing input parameters to Keras module functions.  2. function calls  3. explaning thought process in common language	|
+#### Windows
 
-#### Step 1:  Implement a function to window time series
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Window time series data. |  The submission returns the proper windowed version of input time series of proper dimension listed in the notebook.  |
-
-
-#### Step 2: Create a simple RNN model using keras to perform regression
-
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Build an RNN model to perform regression. |  The submission constructs an RNN model in keras with LSTM module of dimension defined in the notebook.        |
-
-
-#### Step 3: Clean up a large text corpus
-
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Find and remove all non-english or punctuation characters from input text data.  The submission removes all non-english / non-punctuation characters.  |
+1. Run `git clone https://github.com/udacity/aind2-dl.git; cd aind2-dl`
+2. Run `conda env create -f requirements/aind-dl-windows.yml`
+3. Run `activate aind-dl`
+4. Run `set KERAS_BACKEND=tensorflow`
+5. Run `python -c "from keras import backend"`
 
 
-#### Step 4: Implement a function to window a large text corpus
+## Built With
+* [Anaconda](https://www.continuum.io/downloads) - The data science platform used
 
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Implement a function to window input text data| The submission returns the proper windowed version of input text of proper dimension listed in the notebook.  |
+## Authors
+* **Udacity** - *Initial work* - [AIND-Isolation](https://github.com/udacity/AIND-Isolation)
+* **Jonathan Sulivan**
 
-
-#### Step 5: Create a simple RNN model using keras to perform multiclass classification
-
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Build an RNN model to perform multiclass classification. |  The submission constructs an RNN model in keras with LSTM module of dimension defined in the notebook.        |
-
-
-#### Step 6: Generate text using a fully trained RNN model and a variety of input sequences
-| Criteria       		|     Meets Specifications	        			            | 
-|:---------------------:|:---------------------------------------------------------:| 
-| Generate text using a trained RNN classifier.   | The submission presents examples of generated text from a trained RNN module.  The majority of this generated text should consist of real english words. |
+## Acknowledgments
+* Hackbright Academy
+* Udacity
