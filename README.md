@@ -26,7 +26,6 @@ This project requires **Python 3**:
 ##### Notes:
 
 1. It is highly recommended that you install the [Anaconda](http://continuum.io/downloads) distribution of Python and load the environment included below.
-I used pygame to help me visualize mu programs so that I have beautiful visualizations of AI I can share with others in your portfolio. However, pygame is optional as it can be tricky to install.
 
 ### Installing
 #### Mac OS X and Linux
